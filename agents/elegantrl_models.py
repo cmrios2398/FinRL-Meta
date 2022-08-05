@@ -113,7 +113,7 @@ class DRLAgent:
                 total_asset = (
                     environment.cash
                     + (
-                        environment.price_ary[environment.day] * environment.stocks
+                        environment.price_ary[environment.time] * environment.stocks
                     ).sum()
                 )
                 episode_total_assets.append(total_asset)
