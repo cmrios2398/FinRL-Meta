@@ -111,7 +111,7 @@ class DRLAgent:
                 state, reward, done, _ = environment.step(action)
 
                 total_asset = (
-                    environment.amount
+                    environment.cash
                     + (
                         environment.price_ary[environment.day] * environment.stocks
                     ).sum()
